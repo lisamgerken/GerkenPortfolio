@@ -1,18 +1,122 @@
+.myname {
+	color:  #212f3c;
+	font-size: 50px;
+}
+
+.linkfeature {
+	border-right: 2px solid #000000;
+	border-left: 2px solid #000000;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.formfeatures {
+	background-color: #FFFFFF;
+}
+
+.imagecontainer {
+	max-width: 1400px;
+	margin: 30px;
+}
+
+.image {
+	padding: 10px;
+	margin-bottom: 20px;
+	flex: 1;
+}
+
+.listcontainer {
+	max-width: 1400px;
+	margin: 40px auto 0 auto;
+}
+
+.list {
+	padding: 20px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	flex-basis: 48%;
+}
+
+.list:nth-child(1) {background-color: #FFFFFF;}
+.list:nth-child(2) {background-color: #E0EEEE;}
+
+.bottomcontainer {
+	padding-top: 30px;
+	text-align: center;
+}
+
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 img {
 	border-radius: 10px;
-	box-shadow: 
+	max-width: 280px;
+	box-shadow: 3px 3px 5px #000000;
 }
 
 a:hover {
-	color: green;
+	color: #76d7c4;
 }
 
 header {
 	text-align: center;
+	font-family: 'Monoton', cursive;
+	padding-top: 15px;
 }
 
-form {
-	
+form { 
+	border-style: outset;
+	border-width: 8px;
+	border-color: #0b5345;
+	padding: 15px;
+	margin-top: 25px;
+	width: 500px;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-@media 
+body {
+	font-family: 'Unica One', cursive;
+	background-color: #f8f9f9;
+	color:  #2e4053;
+	font-size: 18px;
+}
+
+nav {
+	float: right;
+	padding-top: 5px;
+}
+
+nav a {
+	text-decoration: none;
+	font-family: 'Unica One', cursive;
+	flex: auto;
+	color: #0b5345;
+}
+
+a {
+	color: #0b5345;
+}
+
+@media (min-width: 768px) {
+	.imagecontainer {
+		display: flex;
+	}
+	.listcontainer {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+@media (max-width: 768px) {
+	nav {float: none;}
+	nav a {display: block; margin-bottom: 10px;}
+	.linkfeature {border-right: none; border-left: none;}
+	.topcontainer {display: flex; flex-direction: column-reverse;}
+	form {width: 90%; padding: 10px; margin-top: 275px;}
+	input[type=text], textarea {width:75%;}
+}

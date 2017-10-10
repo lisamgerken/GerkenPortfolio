@@ -1,17 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<link href="stylesheets.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Monoton|Unica+One" rel="stylesheet">
+	<title>My portfolio</title>
+	<meta charset="utf-8">
 </head>
 <body>
-<h1>Lisa Gerken</h1>
-<form action="contact.html" method="post">
-<p>Name:</p>
-<p><input type="text" name="name" value=""></p>
-<p>Phone:</p>
-<p><input type="text" name="phone" value=""></p>
-<p>Message:</p>
-<p><textarea name="message" rows="5" cols="20"></textarea></p>
-<p><input type="submit"></p>
+<div id="wrapper">
+<div class="topcontainer">
+	<nav>
+		<a href="./index.html">Home</a>
+		<a href="./about.html" class="linkfeature">About</a>
+		<a href="./contact.html">Contact</a>
+	</nav>
+	<header>
+		<h1 class="myname">Lisa Gerken</h1>
+	</header>
+</div>
+<form action="contact.html" method="post" class="formfeatures">
+	<p>Name:</p>
+		<input type="text" name="name" value=""></p>
+	<p>Phone:</p>
+		<input type="text" name="phone" value="">
+	<p>Message:</p>
+		<textarea name="message" rows="5" cols="20"></textarea>
+	<p><input type="submit"></p>
 </form>
+</div>
 </body>
 </html>
